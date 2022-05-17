@@ -14,7 +14,7 @@ import ChangeColorModeButton from './changecolormodebutton';
 export default function Navbar() {
   return (
     // Container
-    <Flex h="7%" mb={4}
+    <Flex h="7%" mb={6}
         dir="row" justify="space-between" align="center" 
         borderBottom="2px" borderColor={useColorModeValue("gray.100", "gray.700")}>
 
