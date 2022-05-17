@@ -1,20 +1,29 @@
-import { Heading, Box, Text } from '@chakra-ui/react'
+import { Heading, Box, Text, Flex } from '@chakra-ui/react'
 
 import Navbar from "../components/navbar"
+import ProfileHeadline from "../components/ProfileHeadline"
 
 export default function Home() {
   return (
-    <Box w="60%" h="100vh" m="auto">
+    <Box w="50%" h="100vh" m="auto">
       <Navbar />
 
-      <Box w="90%" m="auto">
-        {/* About me section */}
-        <Heading as="h3" size="md" mb={2} variant="linebelow">About Me</Heading>
-        <Text fontStyle="md">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus enim, ultrices eget scelerisque eget, convallis ut sapien. Morbi feugiat sapien eu elit posuere, nec molestie neque fermentum. Sed laoreet ex sed ex efficitur, sed aliquam turpis lobortis. Vestibulum accumsan ligula sit amet neque mollis, at aliquam leo ultrices. Nunc vel aliquam ligula. Proin sed nisi at nulla blandit iaculis a et quam. Ut quis felis et lorem tempor pharetra nec quis risus. Donec tempor rutrum turpis at porta. Vestibulum molestie vehicula quam, sed egestas neque luctus eu. Vestibulum lacinia odio ante, vel euismod dui gravida at. Suspendisse potenti.
-          Duis varius sem erat, et sollicitudin quam pharetra id. Nam varius risus tellus. Vestibulum viverra eget nisi nec tempor. Donec ac lorem ultrices nunc semper ornare. Nunc vulputate eros ut efficitur gravida. In hac habitasse platea dictumst. In ut placerat sapien. Sed sed orci vitae libero euismod auctor id a est. Nunc tristique, libero semper auctor facilisis, lorem tellus semper tortor, ut semper orci leo eget augue. Curabitur molestie sed libero vel mattis. Fusce id ultrices velit. Ut gravida pretium tortor nec rhoncus. Morbi venenatis odio lectus.
-        </Text>  
-      </Box>
+      <ProfileHeadline />
+
+      {/* About me section */}
+      <Heading as="h3" size="md" variant="section-title">About Me</Heading>
+      <Text fontStyle="md">
+        Hi! I'm Lukas Strelecky, an incoming freshman at Brown University. I plan on majoring in Math &#38; Computer Science, while 
+        also pursuing language studies, specifically Chinese and Korean. After being born in New York City, I've spent almost all of my 
+        childhood in New Jersey, and love traveling to foreign countries. I have a passion for web development and photography that is deeply
+        rooted in a strong desire to creatively express myself&ndash;art was never really my thing, so I turned to less conventional means to
+        be imaginative.
+        <br /><br />
+        I started programming in 6th grade, and ever since, I've been teaching myself different languages and creating small applications. In 
+        high school, I delved deeper into CS and took high level courses like Data Structures and Algorithms, marrying my creative ambitions with
+        a sound theoretical foundation. Recently, I've also picked up photography, and I hope that you choose to enjoy some of the photos I've
+        uploaded to this website.
+      </Text>  
     </Box>
   )
 }
