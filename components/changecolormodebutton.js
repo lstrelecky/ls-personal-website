@@ -5,6 +5,8 @@ export default function ChangeColorModeButton() {
     const { colorMode, toggleColorMode } = useColorMode()
 
     return (
-        <IconButton onClick={toggleColorMode} colorScheme={useColorModeValue("purple", "orange")} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} />
+        <IconButton onClick={toggleColorMode} 
+                    colorScheme={useColorModeValue("purple", "orange")} 
+                    icon={useColorModeValue(<MoonIcon />, <SunIcon />)} />
     )
 }

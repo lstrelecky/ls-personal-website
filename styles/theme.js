@@ -1,8 +1,9 @@
 import { extendTheme } from '@chakra-ui/react'
+import { mode } from "@chakra-ui/theme-tools"
 
 const config = {
   initialColorMode: 'light',
-  useSystemColorMode: false
+  useSystemColorMode: true
 }
 
 const fonts = {
@@ -13,13 +14,22 @@ const fonts = {
 const components = {
   Heading: {
     variants: {
-      "section-title": {
+      "section-title": props => ({
         textDecoration: "underline",
-        textDecorationColor: "red.400", // TODO: MAKE THIS DYNAMIC BASED ON COLOR MODE
         textDecorationThickness: 3,
+        textDecorationColor: mode("gray.300", "gray.500")(props),
         textUnderlineOffset: 6,
         marginBottom: 4
-      }
+      })
+    }
+  },
+  Box: {
+    variants: {
+      "photo-box": props => ({
+        backgroundColor: mode("gray.700", "gray.200")(props),
+        borderRadius: 3,
+        padding: 3
+      })
     }
   }
 }

@@ -20,7 +20,7 @@ export default function Navbar() {
 
         {/* Left box containing links */}
         <Flex direction="row" justify="flex-start" align="center">
-            <Heading as="h5" size="md" textTransform="uppercase">LS</Heading>
+            <Heading as="h5" size="lg" textTransform="uppercase" mr={2}>LS</Heading>
             <NextLink href="/"><Link ml={3}>Home</Link></NextLink>
             <NextLink href="/photography"><Link ml={3}>Photography</Link></NextLink>
         </Flex>

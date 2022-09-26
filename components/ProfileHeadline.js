@@ -1,4 +1,5 @@
-import { Heading, Box, Text, Flex, Avatar } from '@chakra-ui/react'
+import { Heading, Text, Flex } from '@chakra-ui/react'
+import { Avatar, AvatarGroup } from "@chakra-ui/avatar"
 
 export default function ProfileHeadline() {
   return (
@@ -7,7 +8,7 @@ export default function ProfileHeadline() {
             <Heading size="lg">Lukas Strelecky</Heading>
             <Text>College Student - Photography &#38; Web Development</Text>
         </Flex>
-        <Avatar size="xl" name="Lukas Strelecky" src='https://bit.ly/3ljmhc9' />
+        <Avatar src="Headshot.JPG" size="xl" name="Lukas Strelecky"/>
     </Flex>
   )
 }

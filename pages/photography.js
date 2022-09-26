@@ -1,14 +1,14 @@
-import { Link, Box, Text } from '@chakra-ui/react'
-import NextLink from "next/link";
+import Navbar from '../components/navbar';
+import ImageCard from '../components/ImageCard';
+
+import { Box } from '@chakra-ui/react';
 
 export default function Photography() {
   return (
-    <Box>
-      <Text>This is going to be the photography page.</Text>
+    <Box w="35%" h="100vh" m="auto">
+      <Navbar />
 
-      <NextLink href='/'>
-        <Link>Home</Link>
-      </NextLink>
+      <ImageCard location="Hawaii" imagename="Snapseed.jpg" year="2019"></ImageCard>
     </Box>
   )
 }
