@@ -6,7 +6,7 @@ export default function ProfileHeadline() {
     <Flex direction="row" justify="space-between" align="center" mb={6}>
         <Flex direction="column" justify="center" align="flex-start">
             <Heading size="lg">Lukas Strelecky</Heading>
-            <Text>College Student - Photography &#38; Web Development</Text>
+            <Text>College Student - Webdev, Photography,  &#38; Medicine</Text>
         </Flex>
         <Avatar src="Headshot.JPG" size="xl" name="Lukas Strelecky"/>
     </Flex>

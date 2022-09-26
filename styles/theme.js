@@ -19,7 +19,8 @@ const components = {
         textDecorationThickness: 3,
         textDecorationColor: mode("gray.300", "gray.500")(props),
         textUnderlineOffset: 6,
-        marginBottom: 4
+        marginBottom: 4,
+        marginTop: 4
       })
     }
   },
@@ -31,6 +32,9 @@ const components = {
         padding: 3
       })
     }
+  },
+  Link: {
+    baseStyle: { textDecoration: "none", }
   }
 }
 
