@@ -1,14 +1,30 @@
+import { Button, Flex, Link } from "@chakra-ui/react";
 
-
-import { Heading, Text, Flex } from '@chakra-ui/react'
-import { Avatar, AvatarGroup } from "@chakra-ui/avatar"
-
-export default function ProfileHeadline() {
+export default function Links() {
   return (
-    <>
-        <Link href="https://www.linkedin.com/in/lukas-strelecky-22b157223/" isExternal>
-            <Button colorScheme="linkedin">Check out my LinkedIn</Button>
-        </Link> 
-    </>
+    <Flex direction="row" align="center" justify="space-between" w="100%" mt={3} mx="auto" p={0}>
+        {/* Default styling not working in theme.js */}
+        {/* Use inline styling for now. TODO: fix this. */}
+        <Button width="30%" colorScheme="linkedin">
+          <Link style={{ textDecoration: 'none' }} 
+                href="https://www.linkedin.com/in/lukas-strelecky-22b157223/" isExternal> 
+                LinkedIn         
+          </Link> 
+        </Button>
+
+        <Button width="30%" colorScheme="pink">
+          <Link style={{ textDecoration: 'none' }} 
+                href="https://www.instagram.com/takenbylukas/" isExternal> 
+                Photos         
+          </Link> 
+        </Button>
+
+        <Button width="30%" colorScheme="telegram">
+          <Link style={{ textDecoration: 'none' }} 
+                href="google.com" isExternal> 
+                Github         
+          </Link> 
+        </Button>
+    </Flex>
   )
 }
