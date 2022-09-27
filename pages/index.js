@@ -1,8 +1,8 @@
 import { Heading, Box, Text, Code, Flex, Link, Button } from '@chakra-ui/react'
 
-import Navbar from "../components/navbar"
-import ProfileHeadline from "../components/profileheadline"
-import Links from "../components/links";
+import Navbar from "../components/navbar.js"
+import ProfileHeadline from "../components/profileheadline.js"
+import Links from "../components/links.js";
 
 export default function Home() {
   return (
