@@ -60,7 +60,8 @@ export default function Home() {
 
       {/* Footer */}
       <Text mt={10} fontSize={10} textAlign={"center"}>
-        Site powered by ChakraUI. Written by Lukas Strelecky.
+        Site powered by ChakraUI. Hosted on Vercel.
+        <br/>Written by Lukas Strelecky.
       </Text>
           
     </Box>
