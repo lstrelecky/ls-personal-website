@@ -6,7 +6,7 @@ import Links from "../components/links.js";
 
 export default function Home() {
   return (
-    <Box w="35%" h="100vh" m="auto">
+    <Box w={["95%", "80%", "65%", "45%"]} h="100vh" m="auto">
       <Navbar />
       <ProfileHeadline />
 
@@ -14,7 +14,7 @@ export default function Home() {
       <Flex w="full" justify="center">
         {/* Do not pass children prop–React build */}
         <Code colorScheme="blue" px={3} py={1} m="auto">
-          console.log(&apos;Hi, everyone! Welcome to my portfolio website.&apos;)
+          <Text fontSize={["2.25vw", "1.75vw", "1.35vw", "0.9vw"]}>console.log(&apos;Hi, everyone! Welcome to my portfolio website.&apos;)</Text>
         </Code>
       </Flex>
       
