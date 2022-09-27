@@ -21,7 +21,7 @@ export default function Links() {
 
         <Button width="30%" colorScheme="telegram">
           <Link style={{ textDecoration: 'none' }} 
-                href="google.com" isExternal> 
+                href="https://github.com/lstrelecky" isExternal> 
                 Github         
           </Link> 
         </Button>
