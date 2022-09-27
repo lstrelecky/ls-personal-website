@@ -1,5 +1,5 @@
 import { Heading, Text, Flex } from '@chakra-ui/react'
-import { Avatar, AvatarGroup } from "@chakra-ui/avatar"
+import { Avatar } from "@chakra-ui/avatar"
 
 export default function ProfileHeadline() {
   return (
