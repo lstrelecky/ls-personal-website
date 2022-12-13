@@ -6,21 +6,21 @@ export default function Links() {
         {/* Default styling not working in theme.js */}
         {/* Use inline styling for now. TODO: fix this. */}
         <Button width="30%" colorScheme="linkedin">
-          <Link variant="button-link"
+          <Link variant="buttonLink"
                 href="https://www.linkedin.com/in/lukas-strelecky-22b157223/" isExternal> 
                 LinkedIn         
           </Link> 
         </Button>
 
         <Button width="30%" colorScheme="pink">
-          <Link variant="button-link"
+          <Link variant="buttonLink"
                 href="https://www.instagram.com/takenbylukas/" isExternal> 
                 Photos         
           </Link> 
         </Button>
 
         <Button width="30%" colorScheme="telegram">
-          <Link variant="button-link"
+          <Link variant="buttonLink"
                 href="google.com" isExternal> 
                 Github         
           </Link> 

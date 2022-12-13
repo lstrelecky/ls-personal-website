@@ -19,7 +19,7 @@ export default function Home() {
       </Flex>
       
       {/* About me section */}
-      <Heading as="h3" size="md" variant="section-title">About Me</Heading>
+      <Heading as="h3" size="md" variant="sectionTitle">About Me</Heading>
       <Text fontStyle="md">
         Hi! I&apos;m Lukas Strelecky, a freshman at Brown University. I&apos;m on a pre-medical track, majoring in Math &#38; Computer Science, while 
         also pursuing language studies, specifically Chinese and Korean. After being born in New York City, I&apos;ve spent almost all of my 
@@ -33,7 +33,7 @@ export default function Home() {
       </Text>  
 
       {/* Resume/CV Section */}
-      <Heading as="h3" size="md" variant="section-title">Resume/CV</Heading>
+      <Heading as="h3" size="md" variant="sectionTitle">Resume/CV</Heading>
       <Text fontStyle="md">
         I am currently a freshman at Brown Univeristy (expected 2026) on a pre-med track, pursuing a Sc.B. in Computer Science. I am also a 
         member of the Korean-American Student Association, Brown Tutoring Corps, and Brown Applied Computing. From 2015 to 2022, I 
@@ -49,7 +49,7 @@ export default function Home() {
       </Text>
 
       {/* Links */}
-      <Heading as="h3" size="md" variant="section-title">Links</Heading>
+      <Heading as="h3" size="md" variant="sectionTitle">Links</Heading>
         <Text fontStyle="md">
           Use the links below to stay in touch and find out more about me. I&apos;m also reachable by email at lukas_strelecky@brown.edu.
         </Text>

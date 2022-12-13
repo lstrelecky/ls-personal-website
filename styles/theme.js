@@ -1,6 +1,9 @@
-import { extendTheme } from '@chakra-ui/react'
-import { mode } from "@chakra-ui/theme-tools"
+import { extendTheme, RangeSliderThumb } from '@chakra-ui/react'
+import { mode } from '@chakra-ui/theme-tools'
+import { defineStyle, defineStyleConfig } from '@chakra-ui/react'
 
+
+// After upgrade to Chakra v2.0.
 const config = {
   useSystemColorMode: true
 }
@@ -10,35 +13,32 @@ const fonts = {
   body: 'Varela Round, sans-serif',
 }
 
-const components = {
-  Heading: {
-    variants: {
-      "section-title": props => ({
-        textDecoration: "underline",
-        textDecorationThickness: 3,
-        textDecorationColor: mode("gray.300", "gray.500")(props),
-        textUnderlineOffset: 6,
-        marginBottom: 4,
-        marginTop: 4
-      })
-    }
-  },
-  Box: {
-    variants: {
-      "photo-box": props => ({
-        backgroundColor: mode("gray.700", "gray.200")(props),
-        borderRadius: 3,
-        padding: 3
-      })
-    }
-  },
-  Link: {
-    variants: {
-      "button-link": {
-        textDecoration: "none"
-      }
-    }
+// Heading
+const sectionTitle = defineStyle(props => ({
+  textDecoration: "underline",
+  textDecorationThickness: 3,
+  textDecorationColor: mode("gray.300", "gray.500")(props),
+  textUnderlineOffset: 6,
+  marginBottom: 4,
+  marginTop: 4
+}));
+
+const headingTheme = defineStyleConfig({ variants: { sectionTitle } });
+
+// Link
+const buttonLink = defineStyle({ 
+  textDecoration: "none",
+  color: "black",
+  '&:hover':{
+    textDecoration: "none",
   }
+});
+
+const linkTheme = defineStyleConfig({ variants: { buttonLink } });
+
+const components = {
+  Heading: headingTheme,
+  Link: linkTheme
 };
 
 const theme = extendTheme({ config: config, fonts: fonts, components: components});
