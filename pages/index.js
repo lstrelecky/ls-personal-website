@@ -6,7 +6,7 @@ import Links from "../components/links.js";
 
 export default function Home() {
   return (
-    <Box w={["95%", "80%", "65%", "45%"]} h="100vh" m="auto">
+    <Box w={["95%", "80%", "65%", "55%", "45%"]} h="100vh" m="auto">
       <Navbar />
       <ProfileHeadline />
 
@@ -19,7 +19,7 @@ export default function Home() {
       </Flex>
       
       {/* About me section */}
-      <Heading as="h3" size="md" variant="section-title">About Me</Heading>
+      <Heading as="h3" size="md" variant="sectionTitle">About Me</Heading>
       <Text fontStyle="md">
         Hi! I&apos;m Lukas Strelecky, a freshman at Brown University. I&apos;m on a pre-medical track, majoring in Math &#38; Computer Science, while 
         also pursuing language studies, specifically Chinese and Korean. After being born in New York City, I&apos;ve spent almost all of my 
@@ -33,7 +33,7 @@ export default function Home() {
       </Text>  
 
       {/* Resume/CV Section */}
-      <Heading as="h3" size="md" variant="section-title">Resume/CV</Heading>
+      <Heading as="h3" size="md" variant="sectionTitle">Resume/CV</Heading>
       <Text fontStyle="md">
         I am currently a freshman at Brown Univeristy (expected 2026) on a pre-med track, pursuing a Sc.B. in Computer Science. I am also a 
         member of the Korean-American Student Association, Brown Tutoring Corps, and Brown Applied Computing. From 2015 to 2022, I 
@@ -44,15 +44,12 @@ export default function Home() {
         In the spring of 2022, I had the pleasure of working with the cybersecurity team at Summit Health. I was trained in industry leading cybersecurity
         tools, such as Qualys, Medigate, and CrowdStrike, monitoring users&apos; actions before reporting to higher-ups with calculated advice for further action
         on vulnerabilities.
-        <br /><br/>
-        Throughout 2021, I worked as a Tech Office Intern, installing and reparing hardware, developing a classroom tech inventory system, and engineered a 
-        scheduling algorithm for Pingry&apos;s courss.
         <br /><br/>        
         For a more detailed resume, <Link href="https://docs.google.com/document/d/1m9XJNbfNN5D_K8dpBT7ADqzgOLLgA0sf/edit?usp=sharing&ouid=111113412581063902371&rtpof=true&sd=true">click here.</Link>        
       </Text>
 
       {/* Links */}
-      <Heading as="h3" size="md" variant="section-title">Links</Heading>
+      <Heading as="h3" size="md" variant="sectionTitle">Links</Heading>
         <Text fontStyle="md">
           Use the links below to stay in touch and find out more about me. I&apos;m also reachable by email at lukas_strelecky@brown.edu.
         </Text>
@@ -60,9 +57,9 @@ export default function Home() {
 
       {/* Footer */}
       <Text mt={10} fontSize={10} textAlign={"center"}>
-        Site powered by ChakraUI. Written by Lukas Strelecky.
+        Site powered by ChakraUI. Hosted on Vercel.
+        <br/>Written by Lukas Strelecky.
       </Text>
-          
     </Box>
-  )
-}
+  );
+};
