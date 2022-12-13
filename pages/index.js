@@ -6,7 +6,7 @@ import Links from "../components/links.js";
 
 export default function Home() {
   return (
-    <Box w={["95%", "80%", "65%", "45%"]} h="100vh" m="auto">
+    <Box w={["95%", "80%", "65%", "55%", "45%"]} h="100vh" m="auto">
       <Navbar />
       <ProfileHeadline />
 
@@ -44,9 +44,6 @@ export default function Home() {
         In the spring of 2022, I had the pleasure of working with the cybersecurity team at Summit Health. I was trained in industry leading cybersecurity
         tools, such as Qualys, Medigate, and CrowdStrike, monitoring users&apos; actions before reporting to higher-ups with calculated advice for further action
         on vulnerabilities.
-        <br /><br/>
-        Throughout 2021, I worked as a Tech Office Intern, installing and reparing hardware, developing a classroom tech inventory system, and engineered a 
-        scheduling algorithm for Pingry&apos;s courss.
         <br /><br/>        
         For a more detailed resume, <Link href="https://docs.google.com/document/d/1m9XJNbfNN5D_K8dpBT7ADqzgOLLgA0sf/edit?usp=sharing&ouid=111113412581063902371&rtpof=true&sd=true">click here.</Link>        
       </Text>
@@ -63,7 +60,6 @@ export default function Home() {
         Site powered by ChakraUI. Hosted on Vercel.
         <br/>Written by Lukas Strelecky.
       </Text>
-          
     </Box>
-  )
-}
+  );
+};
